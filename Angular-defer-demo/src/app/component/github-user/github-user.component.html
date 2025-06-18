@@ -1,0 +1,20 @@
+<section *ngIf="user" class="mt-6 bg-white p-6 rounded-lg shadow-lg">
+    <div class="flex items-center mb-4">
+        <img [src]="user.avatar_url" alt="Avatar" class="w-20 h-20 rounded-full mr-4">
+        <div>
+            <h2 class="text-xl font-bold">{{ user.name }} ({{ user.login }})</h2>
+            <p class="text-sm text-gray-500">{{ user.bio }}</p>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-6">
+        <div class="p-4 bg-gray-100 rounded">
+            <h3 class="text-md font-semibold mb-2">Followers</h3>
+            <p class="text-lg">{{ user.followers }}</p>
+        </div>
+        <div class="p-4 bg-gray-100 rounded">
+            <h3 class="text-md font-semibold mb-2">Public Repos</h3>
+            <p class="text-lg">{{ user.public_repos }}</p>
+        </div>
+    </div>
+</section>

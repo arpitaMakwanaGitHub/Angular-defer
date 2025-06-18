@@ -1,0 +1,17 @@
+<h1 class="text-2xl font-bold mb-4">Advanced GitHub Dashboard (defer demo)</h1>
+
+<button (click)="showUser = true" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+    Load GitHub Dashboard
+</button>
+
+<ng-container *ngIf="showUser">
+    @defer (when showUser) {
+    <app-github-user />
+    } @placeholder {
+    <p class="text-gray-500 mt-4">Loading dashboard...</p>
+    } @loading {
+    <p class="text-blue-500 mt-4 animate-pulse">Loading in progress...</p>
+    } @error {
+    <p class="text-red-600">Failed to load GitHub dashboard.</p>
+    }
+</ng-container>
