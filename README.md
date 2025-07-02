@@ -20,8 +20,13 @@ Further help
 To get more help on the Angular CLI use ng help or go check out the Angular CLI Overview and Command Reference page.
 
 Angular-defer
-// Angular 17+ Standalone App with @defer + Real-Time API Example // Purpose: Lazily load a component that fetches GitHub user data // Usage: Helpful for performance when loading expensive components
+-- Angular 17+ Standalone App with @defer + Real-Time API Example 
+-- Purpose: Lazily load a component that fetches GitHub user data 
+-- Usage: Helpful for performance when loading expensive components
 
-// ----------------------------- // Explanation of @defer Use Case // ----------------------------- // This is helpful in real applications to: // - Defer loading expensive modals, dashboards, charts // - Improve initial page load performance (LCP) // - Split components into smaller code chunks for better performance // - Lazy load optional or rarely used sections (e.g., help panels)
-
-// You can extend this with routing, TailwindCSS, or drag-drop widgets
+-- Explanation of @defer Use Case 
+-- This is helpful in real applications to: 
+-- Defer loading expensive modals, dashboards, charts 
+-- Improve initial page load performance (LCP) 
+-- Split components into smaller code chunks for better performance 
+-- Lazy load optional or rarely used sections (e.g., help panels)
